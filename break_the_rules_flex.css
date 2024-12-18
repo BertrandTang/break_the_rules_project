@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Keania+One&display=swap');
+/*Importing stuff*/
 
 * {
     box-sizing: border-box;
@@ -261,13 +262,13 @@ button {
         flex-direction: column;
     }
 
-    .subscription{
+    .subscription {
         width: 400px;
-        padding: 2rem 1rem;    
+        padding: 2rem 1rem;
         justify-content: center;
         align-items: center;
     }
-    
+
 
     .subscribe_button {
         order: 3;
