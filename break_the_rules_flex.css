@@ -8,13 +8,13 @@
     height: 50px;
 }
 
-body{
-display: flex;
-justify-content: center;
-align-content: top;
-background-image: url('/integration_projet_fana/img/background.png');
-background-size: cover;
-padding: 3rem;
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url('/integration_projet_fana/img/background.png');
+    background-size: cover;
+    padding: 3rem;
 }
 
 section {
@@ -84,7 +84,7 @@ nav {
     padding-top: 2rem;
 }
 
-.offers .offers_list{
+.offers .offers_list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +114,7 @@ nav {
 }
 
 .reservation_button,
-.subscribe_button{
+.subscribe_button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,5 +155,121 @@ button {
 }
 
 .subscription h3 {
-    padding:  1rem;
+    padding: 1rem;
+}
+
+
+
+@media (width <=441px) {
+
+    body {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    section {
+        width: 100%;
+    }
+
+
+    .window_elements {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links_list {
+        flex-direction: column;
+    }
+
+    .links_list .link a {
+        font-size: 2rem;
+    }
+
+    .title h1 {
+        font-size: 2rem;
+        padding: 2rem 0rem;
+    }
+
+    .movie {
+        width: 100%;
+    }
+
+
+    .movie img {
+        height: 250px;
+        width: 280px;
+        object-fit: cover;
+    }
+
+    .burger {
+        width: 60px;
+        height: 60px;
+        background: none;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .burger .line {
+        width: 50px;
+        height: 13px;
+        background: #fff;
+        transition: all 0.3s ease;
+    }
+
+    .offers {
+        display: none;
+    }
+
+    .reservations {
+        order: 2;
+    }
+
+    .reservations .reservations_list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .reservations_list img {
+        height: 200px;
+        width: 400px;
+        object-fit: cover;
+    }
+
+    .reservation_button {
+        order: 1;
+        padding: 2rem 5rem;
+    }
+
+    .subscriptions {
+        order: 4;
+    }
+
+    .subscriptions .subscriptions_list {
+        flex-direction: column;
+    }
+
+    .subscription{
+        width: 400px;
+        padding: 2rem 1rem;    
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .subscribe_button {
+        order: 3;
+        padding: 2rem 6rem;
+    }
 }
